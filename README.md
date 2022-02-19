@@ -97,12 +97,6 @@ body {
   margin-right: 10px;
   color: rgb(91, 10, 241);
 }
-
-.menuitem a {
-  text-decoration: none;
-  color: blanchedalmond;
-}
-
 .content {
   display: block;
   width: 100%;
