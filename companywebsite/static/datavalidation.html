@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    var reg,data,res;
+    data="Welcome to Saveetha Engineering College";
+    /*reg=new RegExp("ve*t","g");*/
+    reg=/ve*t/g;
+    res=data.match(reg);
+    if(res==null)
+    {
+        document.write("<h1>No Matches Found</h1>");
+    }else{
+        document.write("<h1>Matched</h1>");
+        document.write("<h1>"+res.length+"matches found</h1>")
+        for(var i=0;i<res.length;i++)
+        {
+            document.write("<h2>Match"+i+":"+res[i]+"</h2>");
+        }
+    }
+</script>
+</body>
+</html>

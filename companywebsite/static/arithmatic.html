@@ -1,0 +1,114 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background-color:rgba(138, 180, 22, 0.726);
+        color:black;
+        
+    }
+    .container{
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content{
+        display:block;
+        width:100%;
+        background-color:lavenderblush;
+        min-height: 500px;
+        margin-top:150px;
+
+    }
+    h1{
+        text-align: center;
+        padding-top:50px;
+        font-size:40px;
+
+    }
+    .formelement{
+        text-align:center;
+        padding-bottom:15px;
+        font-size:25px;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>ARITHMETIC OPERATIONS</h1>
+            <form>
+                <div class="formelement">
+                    <label for="aedit">A:</label>
+                    <input type="text" id="aedit" value="0"/>
+                </div>
+                <div class="formelement">
+                    <label for="bedit">B:</label>
+                    <input type="text" id="bedit" value="0"/>
+                </div>
+                <div class="formelement">
+                    <input type="button" value="CALCULATE" id="calculatebutton"/>
+                </div>
+                <div class="formelement">
+                    <label for="addedit">Addition Answer:</label>
+                    <input type="text" id="addedit" readonly value="0"/>
+                </div>
+                <div class="formelement">
+                    <label for="subedit">Subtraction Answer:</label>
+                    <input type="text" id="subedit" readonly value="0"/>
+                </div>
+                <div class="formelement">
+                    <label for="muledit">Multiplication Answer:</label>
+                    <input type="text" id="muledit" readonly value="0"/>
+                </div>
+                <div class="formelement">
+                    <label for="divedit">Division Answer:</label>
+                    <input type="text" id="divedit" readonly value="0"/>
+                </div>
+                
+
+            </form>
+
+        </div>
+    </div>
+<script type="text/javascript">
+    var button;
+
+    button=document.querySelector("#calculatebutton");
+    button.addEventListener("click",function(){
+        var atext,btext,addtext,subtext,multext,divtext;
+        var aval,bval,addval,subval,mulval,divval;
+        atext=document.querySelector("#aedit")
+        btext=document.querySelector("#bedit")
+        addtext=document.querySelector("#addedit")
+        subtext=document.querySelector("#subedit")
+        multext=document.querySelector("#muledit")
+        divtext=document.querySelector("#divedit")
+
+        aval=parseInt(atext.value);
+        bval=parseInt(btext.value);
+        addval=aval+bval;
+        subval=aval-bval;
+        mulval=aval*bval;
+        divval=aval/bval;
+        addtext.value=""+addval;
+        subtext.value=""+subval;
+        multext.value=""+mulval;
+        divtext.value=""+divval;
+
+        
+    });
+
+</script>   
+</body>
+</html>

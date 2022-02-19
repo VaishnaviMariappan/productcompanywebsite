@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    background-color: whitesmoke;
+    color:rebeccapurple;
+    
+  }
+  
+  .container {
+    width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    box-shadow: 15px 15px 8px gray;
+  }
+  .banner {
+    display: block;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ps4M0SbHFfq4FR3syHWKo28Lw7epC89YdQ&usqp=CAU");
+    background-size: 100% 100%;
+    margin: 0px 0px 0px 0px;
+    padding-top: 125px;
+    color: mintcream;
+    background-color:burlywood;
+  }
+  .menu {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background-color: forestgreen;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0px 0px 0px 0px;
+    border-width: 1px;
+  }
+  
+  .menuitem {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .menuitemselected {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(91, 10, 241);
+  }
+  
+  .menuitem a {
+    text-decoration: none;
+    color: blanchedalmond;
+  }
+  .content {
+    display: block;
+    width: 100%;
+    background-color: cornsilk;
+    min-height: 500px;
+    margin: 0px 0px 0px 0px;
+    border-width: 1px;
+    border-color: rgb(6, 243, 38);
+    border-style: solid;
+  }
+  .homecontent {
+    min-height: 400px;
+    margin: 10px 10px 10px 10px;
+  }
+  .homecontent h1 {
+    text-align: left;
+    font-family: cursive;
+  }
+  .homecontent img {
+    float: right;
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+  }
+  
+  .contenttext {
+    text-align: justify;
+  }
+  .footer {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: forestgreen;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0px 0px 0px 0px;
+    color:blanchedalmond;
+  }
+  @media screen and (min-width : 768px)
+  {
+      .menu {
+          font-size: 25px;
+          padding-top: 0.5em;
+      }
+      .homecontent{
+          font-size: 25px;
+      }
+      .footer{
+          font-size: 20px;
+      }
+      .container{
+          width:700px;
+      }
+  }
+  
